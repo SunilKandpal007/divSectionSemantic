@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SK - Div Sections Semantics using bootstrap 5.3.2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        .row{background-color: bisque;}
+    </style>
+</head>
+
+<body>
+<div class="container-fluid p-4">
+    <div class="row p-2 text-dark pt-3 rounded">
+        <h2 class="text-center">row-1</h2>
+        <div class="col-sm-12 p-3 my-3 bg-info rounded">
+            <h2 class="text-center">span-12</h2>
+        </div><!-- col-sm-12 closed -->
+    </div><!--1st row div closed-->
+
+    <div class="row my-2 p-2 text-dark rounded border">
+        <h2 class="text-center">row-2</h2>
+            <div class="col-sm-4 bg-light border rounded">
+                <h3 class="text-center mt-3">span-4</h3>
+                <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quaerat vero inventore corrupti exercitationem nesciunt, error velit ea ut hic illo quam! Delectus molestiae accusamus fugit corrupti laborum perferendis consectetur!</p>
+            </div><!-- col-sm-4 closed -->
+
+
+            <!-- span-8 div start -->
+            <div class="col-sm-8 text-dark rounded bg-info">
+                <h2 class="text-center">span-8</h2>
+                <div class="row p-1 m-1 text-dark rounded">
+                    <h3 class="text-center">row-3</h3>
+                        <div class="col-sm-6 bg-light border rounded">
+                            <h3 class="text-center mt-3">span-4</h3>
+                            <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum facilis at, repellat eum iste dolor illum, ex dolorem modi quaerat minima? Quod soluta, accusantium itaque perferendis aperiam amet incidunt ipsum!</p>
+                        </div><!--col-sm-6 div closed-->
+
+                        <div class="col-sm-6 bg-light border rounded">
+                            <h3 class="text-center mt-3">span-4</h3>
+                            <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum facilis at, repellat eum iste dolor illum, ex dolorem modi quaerat minima? Quod soluta, accusantium itaque perferendis aperiam amet incidunt ipsum!</p>
+                        </div><!--col-sm-6 div closed-->
+                </div><!--row div closed-->
+
+                <div class="row p-1 m-1 text-dark rounded">
+                    <h3 class="text-center">row-4</h3>
+                        <div class="col-sm-12 bg-light border rounded">
+                            <h3 class="text-center mt-3">span-8</h3>
+                            <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum facilis at, repellat eum iste dolor illum, ex dolorem modi quaerat minima? Quod soluta, accusantium itaque perferendis aperiam amet incidunt ipsum!</p>
+                        </div><!--col-sm-12 div closed-->
+                </div><!--row div closed-->
+            </div><!--col-sm-8 div closed-->
+
+    </div><!--2nd row div closed-->
+</div><!-- container-fluid div closed -->
+</body>
+</html>

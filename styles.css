@@ -1,0 +1,13 @@
+/**/
+
+.wrapper{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: antiquewhite;
+}
+
+.wrapper > div{
+    flex: 1 1 150px;
+    background-color: blueviolet;
+}
